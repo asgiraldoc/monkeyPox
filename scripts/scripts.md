@@ -1,4 +1,6 @@
-How to run `downloadSeqsFromNCBI.py`:
+The `downloadSeqsFromNCBI.py` script downloads nucleotide sequences from NCBI's database using specified sequence IDs, and saves each sequence as a separate FASTA file.
+
+How to run it: 
 
 
 ```
