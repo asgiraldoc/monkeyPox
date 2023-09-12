@@ -9,7 +9,7 @@ python downloadSeqsFromNCBI.py --email "tul54064@temple.edu" \
 --input_file "../data/data_ncbi/ids.txt"
 ```
 
-The `downloadMetadataFromNCBI.py` script downloads metadata from NCBI's database using specified sequence IDs, and saves each record as a separate JSON file.
+The `downloadMetadataFromNCBI.py` script downloads the metadata from NCBI's database using specified sequence IDs, and saves each record as a separate JSON file.
 
 How to run it: 
 
