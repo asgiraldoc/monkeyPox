@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Monkeypox Evolution and Epidemiological Surveillance Project</title>
 </head>
 <body>
 
