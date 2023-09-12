@@ -24,10 +24,11 @@
 <h2>Repository Contents</h2>
 <ul>
     <li><code>data/</code>: This folder contains all the raw and processed data files, including genome sequences and epidemiological records.</li>
+    <li><code>logs/</code>: This folder contains all the logs from processes.</li>
     <li><code>scripts/</code>: This folder will include Python, R, and other scripts for data manipulation and analysis.</li>
     <li><code>notebooks/</code>: Jupyter notebooks for exploratory data analysis and preliminary findings.</li>
     <li><code>docs/</code>: Detailed documentation and results of the analysis.</li>
-    <li><code>Dockerfile</code>: A Dockerfile to set up a reproducible research environment.</li>
+    <li><code>results</code>: A bin to set up a reproducible research environment.</li>
 </ul>
 
 <hr>
@@ -45,26 +46,24 @@
 
 <h2>Dependencies</h2>
 <ul>
-    <li>Python >= 3.8</li>
-    <li>R >= 4.0</li>
+    <li>Python >= 3.11.x</li>
+    <li>R >= 4.x</li>
     <li>BioPython</li>
     <li>Pandas</li>
     <li>NumPy</li>
-    <li>Nextstrain for phylogenetic analysis</li>
 </ul>
 
 <hr>
 
 <h2>Maintainers</h2>
 <ul>
-    <li><a href="mailto:janedoe@email.com">Jane Doe</a></li>
-    <li><a href="mailto:johnsmith@email.com">John Smith</a></li>
+    <li><a href="mailto:tul54064@temple.edu">Axl S. Cepeda</a></li>
 </ul>
 
 <hr>
 
 <h2>License</h2>
-<p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+<p>This project is licensed under the xxx License. See the <code>LICENSE</code> file for details.</p>
 
 <hr>
 
