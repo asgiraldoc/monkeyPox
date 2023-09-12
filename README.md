@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h1>Monkeypox Evolution and Epidemiological Surveillance Project</h1>
+<h1>Monkeypox Virus Evolution and Epidemiological Surveillance Project</h1>
 
 <h2>Overview</h2>
 <p>This repository is dedicated to the research and surveillance of Monkeypox, a viral disease caused by the Monkeypox virus (MPXV), a member of the Orthopoxvirus genus in the family Poxviridae. The project aims to understand the evolutionary biology of the virus, epidemiological trends, and to help develop better surveillance and control measures. Here you will find relevant datasets, scripts, and analyses concerning the genomic features, phylogenetic relationships, and epidemiological studies of Monkeypox.</p>
