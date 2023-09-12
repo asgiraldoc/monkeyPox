@@ -28,7 +28,7 @@
     <li><code>scripts/</code>: This folder will include Python, R, and other scripts for data manipulation and analysis.</li>
     <li><code>notebooks/</code>: Jupyter notebooks for exploratory data analysis and preliminary findings.</li>
     <li><code>docs/</code>: Detailed documentation and results of the analysis.</li>
-    <li><code>results</code>: A bin to set up a reproducible research environment.</li>
+    <li><code>results/</code>: A bin to set up a reproducible research environment.</li>
 </ul>
 
 <hr>
