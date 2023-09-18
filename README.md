@@ -60,12 +60,7 @@
     <li><a href="mailto:tul54064@temple.edu">Axl S. Cepeda</a></li>
 </ul>
 
-<hr>
 
-<h2>License</h2>
-<p>This project is licensed under the xxx License. See the <code>LICENSE</code> file for details.</p>
-
-<hr>
 
 <p>For any additional questions or contributions, please submit an issue or a pull request. Thank you for contributing to this important field of study.</p>
 
