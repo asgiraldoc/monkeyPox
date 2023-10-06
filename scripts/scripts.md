@@ -36,13 +36,20 @@ The `fasta2nex.py` script converts MSA fasta file to an annotated NEXUS file usi
 
 How to run it: 
 ```
-python fasta2nex.py --input_fasta MSA.fasta \
---input_gff refSeq.gff --output_nexus output_file.nex\
+python fasta2nex.py --input_fasta ../data/data_ncbi/MSA.fasta \
+--input_gff ../data/refSeq/refSeq.gff --output_nexus output_file.nex\
 ```
 
 The `countNuclMSA.py` script counts the number of nucleotides (including IUPAC nucleotides and gaps) in each position of the MSA fasta file for each sequence and generate a TSV file with the result.
 
 How to run it: 
 ```
-python countNuclMSA.py --msa_file MSA.fasta --output_file output_file.tsv
+python countNuclMSA.py --msa_file ../data/data_ncbi/MSA.fasta --output_file output_file.tsv
+```
+
+The `countNuclNexus.py` script counts the number of nucleotides (including IUPAC nucleotides and gaps) in each position of the nexus file for each gene block and generate a TSV file with the result.
+
+How to run it: 
+```
+python countNuclNexus.py --input ../data/data_ncbi/MSA.nex --output output_file.tsv
 ```
