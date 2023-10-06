@@ -32,10 +32,17 @@ python downloadGFFFromNCBI.py --email "tul54064@temple.edu" \
 ```
 
 
-The `fasta2nex.py` script converts MSA fasta files to an annotated NEXUS files using the refSeq gff file.
+The `fasta2nex.py` script converts MSA fasta file to an annotated NEXUS file using the refSeq gff file.
 
 How to run it: 
 ```
 python fasta2nex.py --input_fasta MSA.fasta \
 --input_gff refSeq.gff --output_nexus output_file.nex\
+```
+
+The `countNuclMSA.py` script counts the number of nucleotides (including IUPAC nucleotides and gaps) in each position of the MSA fasta file for each sequence and generate a TSV file with the result.
+
+How to run it: 
+```
+python countNuclMSA.py --msa_file MSA.fasta --output_file output_file.tsv
 ```
