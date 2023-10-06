@@ -32,7 +32,7 @@ python downloadGFFFromNCBI.py --email "tul54064@temple.edu" \
 ```
 
 
-The `fasta2nex.py` script converts MSA fasta file to an annotated (generating two kinds of blocks: gene and intergenec regions) NEXUS file using the refSeq gff file.
+The `fasta2nex.py` script converts MSA fasta file to an annotated (generating two types of blocks: gene and intergenic regions) NEXUS file using the refSeq gff file.
 
 How to run it: 
 ```
@@ -52,4 +52,11 @@ The `countNuclNexus.py` script counts the number of nucleotides (including IUPAC
 How to run it: 
 ```
 python countNuclNexus.py --input ../data/data_ncbi/MSA.nex --output output_file.tsv
+```
+
+The `extSeqsByID.py` script extracts sequences from a fasta file using a list of sequence IDs and generates a new fasta file with the extracted sequences.
+
+How to run it: 
+```
+python extSeqsByID.py -m ../data/data_ncbi/MSA.fasta -i ../data/data_ncbi/ids.txt -o output_file.fasta
 ```
