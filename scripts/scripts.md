@@ -30,3 +30,12 @@ python downloadGFFFromNCBI.py --email "tul54064@temple.edu" \
 --api_key "44816979e53e34d64b1952d71518db87ab08" \
 --input_file "../data/data_ncbi/ids.txt"
 ```
+
+
+The `fasta2nex.py` script converts MSA fasta files to an annotated NEXUS files using the refSeq gff file.
+
+How to run it: 
+```
+python fasta2nex.py --input_fasta MSA.fasta \
+--input_gff refSeq.gff --output_nexus output_file.nex\
+```
