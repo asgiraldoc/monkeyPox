@@ -32,7 +32,7 @@ python downloadGFFFromNCBI.py --email "tul54064@temple.edu" \
 ```
 
 
-The `fasta2nex.py` script converts MSA fasta file to an annotated NEXUS file using the refSeq gff file.
+The `fasta2nex.py` script converts MSA fasta file to an annotated (two kinds of blocks: gene and intergenec regions) NEXUS file using the refSeq gff file.
 
 How to run it: 
 ```
