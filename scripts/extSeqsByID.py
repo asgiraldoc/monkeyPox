@@ -3,55 +3,32 @@ from Bio import AlignIO
 from Bio.Align import MultipleSeqAlignment
 
 
-def extract_sequences(msa_file, id_file, output_file):
-    # Read the MSA file
-    alignment = AlignIO.read(msa_file, "fasta")
-
-    # Read the IDs of the sequences to be extracted
-    with open(id_file, "r") as f:
+def extraer_secuencias(msa_file, id_file, output_file):
+    # Leer el archivo MSA
+    alignment = AlignIO.read(msa_file, 'fasta')
+    
+    # Leer los IDs de las secuencias a extraer
+    with open(id_file, 'r') as f:
         ids = set([line.strip() for line in f])
-
-    # Filter the MSA to only contain sequences with IDs in the list
-    new_alignment = MultipleSeqAlignment(
-        [record for record in alignment if record.id in ids]
-    )
-
-    # Write the new MSA to the output file
-    AlignIO.write(new_alignment, output_file, "fasta")
-    print(f"New MSA file created with {len(new_alignment)} sequences: {output_file}")
-
+    
+    # Filtrar el MSA para contener solo las secuencias con IDs en la lista
+    new_alignment = MultipleSeqAlignment([record for record in alignment if record.id in ids])
+    
+    # Escribir el nuevo MSA al archivo de salida
+    AlignIO.write(new_alignment, output_file, 'fasta')
+    print(f"Nuevo archivo MSA creado con {len(new_alignment)} secuencias: {output_file}")
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Extract sequences from an MSA file based on a list of IDs and create a new MSA file."
-    )
-
-    parser.add_argument(
-        "-m",
-        "--msa_file",
-        type=str,
-        required=True,
-        help="Input MSA file in FASTA format.",
-    )
-    parser.add_argument(
-        "-i",
-        "--id_file",
-        type=str,
-        required=True,
-        help="Text file with the IDs of the sequences to extract.",
-    )
-    parser.add_argument(
-        "-o",
-        "--output_file",
-        type=str,
-        required=True,
-        help="Output MSA file in FASTA format.",
-    )
-
+    parser = argparse.ArgumentParser(description='Extraer secuencias de un archivo MSA según una lista de IDs y crear un nuevo archivo MSA.')
+    
+    parser.add_argument('-m', '--msa_file', type=str, required=True, help='Archivo de entrada MSA en formato FASTA.')
+    parser.add_argument('-i', '--id_file', type=str, required=True, help='Archivo de texto con los IDs de las secuencias a extraer.')
+    parser.add_argument('-o', '--output_file', type=str, required=True, help='Archivo de salida MSA en formato FASTA.')
+    
     args = parser.parse_args()
-
-    extract_sequences(args.msa_file, args.id_file, args.output_file)
-
+    
+    extraer_secuencias(args.msa_file, args.id_file, args.output_file)
 
 if __name__ == "__main__":
     main()
+
